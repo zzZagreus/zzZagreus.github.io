@@ -75,6 +75,7 @@ plugins:
       position: left       # ← 本页大纲移到左栏（目录树上方），原 right
       priority: 45
       condition: not-index    # ← 加这行
+      display: desktop-only    # ← 新增：只在电脑端显示目录
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:

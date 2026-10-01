@@ -21,3 +21,29 @@
   content: "On This Page";
   font-size: 15px;
 }
+
+/* ===== 移动端防溢出补丁 ===== */
+@media all and (max-width: 800px) {
+  article {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  article table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  article pre {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    padding-bottom: 4px;
+  }
+  iframe {
+    max-width: 100%;
+  }
+}

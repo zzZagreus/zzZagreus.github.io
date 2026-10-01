@@ -1,3 +1,23 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+/* 隐藏 About Me 区块的折叠标题栏，只留单行链接 */
+
+/* ===== 桌面端布局：左栏加宽到 380px，正文吃掉右侧空白 ===== */
+@media all and (min-width: 1200px) {
+  .page > #quartz-body {
+    grid-template-columns: 380px minmax(0, 1fr) !important;
+    grid-template-areas:
+      "grid-sidebar-left grid-header"
+      "grid-sidebar-left grid-center"
+      "grid-sidebar-left grid-footer" !important;
+  }
+}
+
+/* 目录标题改为英文 */
+.toc-header h3 {
+  font-size: 0;
+}
+.toc-header h3::before {
+  content: "On This Page";
+  font-size: 15px;
+}

@@ -1,5 +1,5 @@
 ---
-title: Thoughts
+title: Blogs
 ---
 
 非技术性的文字，与笔记同一机制：Typora 写好 `.md` 直接放进来。

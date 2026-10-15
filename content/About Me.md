@@ -2,7 +2,7 @@
 title: About Me
 ---
 
-你好，我是 ○○（请改成你的名字）。
+
 
 - 方向：数学 / （你的研究方向或兴趣）
 - 邮箱：example@example.com
